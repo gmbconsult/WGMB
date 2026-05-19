@@ -1,14 +1,311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>WGMB Admin Panel</title>
-  <link rel="icon" href="../images/logo.png">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WGMB API — Official WhatsApp API for Businesses</title>
+  <meta name="description" content="Send bulk WhatsApp messages, automate chatbots, and grow your business with WGMB Official WhatsApp API. Starting at ₹4,999/year.">
+  <meta property="og:title" content="WGMB API — Official WhatsApp API for Businesses">
+  <meta property="og:description" content="Send bulk WhatsApp messages, automate chatbots, and grow your business.">
+  <meta property="og:image" content="images/hero-banner.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="components/style.css">
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+<script src="components/nav.js"></script>
+<script>document.body.insertAdjacentHTML('afterbegin', buildHeader('home'));</script>
+
+<!-- ══ HERO ══ -->
+<section class="hero" style="background-image: url(images/hero-banner.png); background-size: cover; background-position: center; background-blend-mode: luminosity;">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Official WhatsApp Business API
+        </div>
+        <h1>Send Bulk WhatsApp<br>Messages to <span>1000+</span><br>Customers Instantly</h1>
+        <p>WGMB API — Official WhatsApp API solution for businesses. Marketing automation, chatbot, OTPs, reminders & more. Starting at just ₹4,999/year.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Get Started Free Demo
+          </a>
+          <a href="#products" class="btn-outline">View Pricing →</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-mockup">
+          <div class="mockup-header">
+            <div class="mockup-avatar">💬</div>
+            <div><div class="mockup-name">WGMB Business API</div><div class="mockup-status">● Online — Bulk Sender Active</div></div>
+          </div>
+          <div class="mockup-msgs">
+            <div class="msg-bubble msg-in">Hi! I want to know about your WhatsApp API plans 🙏</div>
+            <div class="msg-bubble msg-out">
+              Hello! Welcome to WGMB API 👋<br><br>
+              ✅ Official WhatsApp API<br>
+              ✅ Bulk messaging 1000+ users<br>
+              ✅ Starting ₹4,999/year<br><br>
+              Shall I send you our brochure?
+              <div class="msg-time">10:32 ✓✓</div>
+            </div>
+            <div class="msg-bubble msg-in">Yes please! Also want a demo</div>
+            <div class="msg-bubble msg-out">
+              Sure! Booking your demo now 📅<br>Our team will call you shortly!
+              <div class="msg-time">10:33 ✓✓</div>
+            </div>
+          </div>
+          <div class="hero-stat-chips">
+            <span class="stat-chip">✓ Official API</span>
+            <span class="stat-chip">✓ 99% Delivery</span>
+            <span class="stat-chip">✓ 24/7 Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">5000+</div><div class="stat-label">Happy Businesses</div></div>
+      <div class="stat-card"><div class="stat-num">1000+</div><div class="stat-label">Messages per Blast</div></div>
+      <div class="stat-card"><div class="stat-num">99%</div><div class="stat-label">Delivery Rate</div></div>
+      <div class="stat-card"><div class="stat-num">24/7</div><div class="stat-label">Live Support</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <div class="section-eyebrow">About WGMB API</div>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-0.5px;margin-bottom:16px;line-height:1.2;">WhatsApp API That Works<br>For Your Business</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:20px;">WGMB API provides official WhatsApp API solutions for businesses that want professional customer communication and marketing automation. With WGMB, you can send marketing messages, utility messages, OTPs, updates, reminders, offers, and customer notifications directly on WhatsApp.</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:28px;">Our platform includes WhatsApp chatbot automation to automate replies, customer support, lead handling, enquiry collection, booking responses, and business workflows — helping businesses save time and improve response speed.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;font-weight:500;"><span style="color:var(--green);font-size:1.1rem;">✓</span> Official Meta-Approved WhatsApp API</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;font-weight:500;"><span style="color:var(--green);font-size:1.1rem;">✓</span> Bulk Messaging to 1000+ Users</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;font-weight:500;"><span style="color:var(--green);font-size:1.1rem;">✓</span> Complete Setup & After-Sales Support</div>
+        </div>
+        <a href="contact.html" class="btn-primary" style="margin-top:28px;display:inline-flex;">Book Free Demo →</a>
+      </div>
+      <div>
+        <img src="images/product-wgmb.png" alt="WGMB API Dashboard" style="width:100%;border-radius:16px;box-shadow:var(--shadow-lg);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRODUCTS ══ -->
+<section class="section section-alt" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Our Plans</div>
+      <h2 class="section-title">Choose Your WhatsApp API Plan</h2>
+      <p class="section-sub">Official WhatsApp API solutions designed for businesses of all sizes. Pick the plan that fits your needs.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card featured">
+        <span class="product-badge-tag">POPULAR</span>
+        <div class="product-icon">📱</div>
+        <div class="product-name">WGMB API</div>
+        <div class="product-desc">Official WhatsApp API for businesses — send bulk messages, automate chatbots, and grow your customer communication.</div>
+        <ul class="product-features">
+          <li>Official WhatsApp API</li>
+          <li>Marketing & Utility Messages</li>
+          <li>Bulk Messaging 1000+ Users</li>
+          <li>WhatsApp Chatbot Automation</li>
+          <li>Installation & Setup Support</li>
+          <li>After-Sales Live Call Support</li>
+          <li>Business Automation Solutions</li>
+        </ul>
+        <div class="product-price">₹4,999 <span>/ year</span></div>
+        <a href="contact.html" class="product-cta">Get Started →</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🔗</div>
+        <div class="product-name">WGMB Coexist API</div>
+        <div class="product-desc">Use your existing WhatsApp number with the Official API — no deletion, no new number required.</div>
+        <ul class="product-features">
+          <li>No need to delete existing WhatsApp</li>
+          <li>No new number required</li>
+          <li>Use normal WhatsApp + API together</li>
+          <li>Official WhatsApp API</li>
+          <li>Bulk Marketing Messages</li>
+          <li>Chatbot Automation Support</li>
+          <li>After-Sales Live Call Support</li>
+        </ul>
+        <div class="product-price">₹9,999 <span>/ year</span></div>
+        <a href="contact.html" class="product-cta" style="background:var(--ink);">Get Started →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ══ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">What You Get</div>
+      <h2 class="section-title">Everything You Need to Scale</h2>
+      <p class="section-sub">Powerful features to automate your WhatsApp marketing and customer communication.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">📢</div><div class="feature-title">Bulk Messaging</div><div class="feature-desc">Send promotional messages, offers, and updates to 1000+ customers in one click with high delivery reliability.</div></div>
+      <div class="feature-card"><div class="feature-icon">🤖</div><div class="feature-title">Chatbot Automation</div><div class="feature-desc">Automate customer replies, lead capture, booking responses, and support workflows 24/7.</div></div>
+      <div class="feature-card"><div class="feature-icon">✅</div><div class="feature-title">Official API</div><div class="feature-desc">Meta-approved official WhatsApp Business API — safe, reliable, and compliant with WhatsApp policies.</div></div>
+      <div class="feature-card"><div class="feature-icon">🔔</div><div class="feature-title">OTP & Notifications</div><div class="feature-desc">Send OTPs, order updates, appointment reminders, payment confirmations on WhatsApp automatically.</div></div>
+      <div class="feature-card"><div class="feature-icon">📊</div><div class="feature-title">Marketing Campaigns</div><div class="feature-desc">Run targeted WhatsApp marketing campaigns with rich media — images, videos, documents, and buttons.</div></div>
+      <div class="feature-card"><div class="feature-icon">🛠️</div><div class="feature-title">Full Setup Support</div><div class="feature-desc">Complete installation, setup, training, and after-sales live call support included in every plan.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VIDEO DEMO ══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">See It In Action</div>
+      <h2 class="section-title">Watch WGMB API Demo</h2>
+      <p class="section-sub">See how easy it is to send bulk WhatsApp messages and set up automation with WGMB API.</p>
+    </div>
+    <div class="video-wrap" onclick="playVideo(this)">
+      <div class="video-placeholder" id="video-placeholder">
+        <div class="play-btn">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <div class="video-label">Watch Demo Video</div>
+        <div class="video-sub">See WGMB API in action — 3 min overview</div>
+      </div>
+      <iframe id="demo-video" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:none;position:absolute;inset:0;"></iframe>
+    </div>
+    <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:0.85rem;">Want a live demo? <a href="contact.html" style="color:var(--green);font-weight:600;">Book a free demo call →</a></p>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Customer Reviews</div>
+      <h2 class="section-title">Businesses Love WGMB API</h2>
+      <p class="section-sub">Join 5000+ businesses already using WGMB API to scale their WhatsApp marketing.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"WGMB API ne hamari marketing bilkul badal di. Ab hum 2000 customers ko ek click mein message bhej sakte hain. ROI kaafi acha mila."</p>
+        <div class="testimonial-author"><div class="author-avatar">R</div><div><div class="author-name">Rahul Sharma</div><div class="author-biz">Clothing Store, Raipur</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Chatbot automation se ab humara team bahut time bachata hai. Students ko auto-replies milti hain instantly. Excellent service!"</p>
+        <div class="testimonial-author"><div class="author-avatar">P</div><div><div class="author-name">Priya Mehta</div><div class="author-biz">Coaching Institute, Indore</div></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Coexist API best hai — apna purana number bhi chala raha hoon aur API bhi use kar raha hoon. Setup bhi bahut easy tha."</p>
+        <div class="testimonial-author"><div class="author-avatar">A</div><div><div class="author-name">Amit Joshi</div><div class="author-biz">Real Estate Agency</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know about WGMB WhatsApp API.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Kya WGMB API official WhatsApp API hai? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Haan, WGMB API bilkul official Meta-approved WhatsApp Business API solution hai. Aapka account safe rahega aur koi ban ka risk nahi hai.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Kya mera purana WhatsApp number delete hoga? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Nahi! WGMB Coexist API se aap apna existing number use kar sakte ho bina delete kiye. Aap normal WhatsApp aur API dono ek saath use kar sakte hain.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Ek baar mein kitne messages bhej sakte hain? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Aap ek baar mein 1000+ customers ko bulk WhatsApp messages bhej sakte hain high delivery reliability ke saath. Messages mein images, videos, documents bhi bhej sakte hain.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Setup mein kitna time lagta hai? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Hamaari team 24-48 ghante mein complete setup aur installation kar deti hai. Saath mein full training bhi dete hain taaki aap khud use kar sako.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Support kaise milega? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Aapko after-sales live call support milega. Hum hamesha available hain — call ya WhatsApp pe contact kar sakte hain. Phone: 8962904124 / 7828319307.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Kya chatbot bhi included hai? <span class="faq-icon">+</span></div>
+        <div class="faq-answer">Haan! WhatsApp chatbot automation dono plans mein included hai — auto-replies, lead handling, booking automation, customer support automation sab kuch.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Scale Your Business<br>with <span>WhatsApp API?</span></h2>
+    <p>Join 5000+ businesses. Get started with a free demo today.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Book Free Demo
+      </a>
+      <a href="tel:8962904124" class="btn-outline">📞 Call Now: 8962904124</a>
+    </div>
+  </div>
+</section>
+
+<script>document.body.insertAdjacentHTML('beforeend', buildFooter());</script>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>We use cookies to improve your experience. By continuing, you agree to our cookie policy.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-dismiss" onclick="dismissCookies()">Dismiss</button>
+  </div>
+</div>
+
+<script>
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function playVideo(wrap) {
+  const placeholder = document.getElementById('video-placeholder');
+  const iframe = document.getElementById('demo-video');
+  // Replace with actual YouTube embed URL
+  iframe.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+  placeholder.style.display = 'none';
+  iframe.style.display = 'block';
+  wrap.style.cursor = 'default';
+}
+
+function acceptCookies() { localStorage.setItem('cookies','accepted'); document.getElementById('cookie-banner').style.display='none'; }
+function dismissCookies() { document.getElementById('cookie-banner').style.display='none'; }
+if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display='none';
+</script>
+
 </body>
 </html>
