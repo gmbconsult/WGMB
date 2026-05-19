@@ -1,0 +1,56 @@
+{
+  "site": {
+    "name": "WGMB API",
+    "tagline": "Official WhatsApp API Solutions for Businesses",
+    "logo": "WGMB API",
+    "primaryColor": "#FFFFFF",
+    "accentColor": "#25d366",
+    "email": "support@gmbconsult.in",
+    "phone1": "8962904124",
+    "phone2": "7828319307",
+    "address": "Om Kailash Building, Kota Chowk, Near Suyash Hospital, Raipur"
+  },
+  "navigation": [
+    { "label": "Home", "url": "index.html", "active": true },
+    { "label": "Contact", "url": "contact.html", "active": true }
+  ],
+  "products": [
+    {
+      "id": "wgmb-api",
+      "name": "WGMB API",
+      "price": "₹4,999/year",
+      "featured": true,
+      "image": "https://placehold.co/800x800/25d366/ffffff?text=WGMB+API",
+      "description": "Official WhatsApp API solutions for businesses — bulk messaging, chatbot automation & more.",
+      "features": ["Official WhatsApp API","Marketing & Utility Messages","Bulk Messaging 1000+ Users","WhatsApp Chatbot Automation","Installation & Setup Support","After-Sales Live Call Support","Business Automation Solutions"]
+    },
+    {
+      "id": "wgmb-coexist",
+      "name": "WGMB Coexist API",
+      "price": "₹9,999/year",
+      "featured": true,
+      "image": "https://placehold.co/800x800/128c7e/ffffff?text=Coexist+API",
+      "description": "Use your existing WhatsApp number with Official API — no deletion, no new number needed.",
+      "features": ["No need to delete existing WhatsApp","No new number required","Use normal WhatsApp + API together","Official WhatsApp API","Bulk Marketing Messages","Chatbot Automation Support","After-Sales Live Call Support"]
+    }
+  ],
+  "stats": [
+    { "number": "5000+", "label": "Happy Businesses" },
+    { "number": "1000+", "label": "Messages per Blast" },
+    { "number": "99%", "label": "Delivery Rate" },
+    { "number": "24/7", "label": "Support Available" }
+  ],
+  "testimonials": [
+    { "name": "Rahul Sharma", "business": "Clothing Store, Raipur", "text": "WGMB API ne hamari marketing bilkul badal di. Ab hum 2000 customers ko ek click mein message bhej sakte hain.", "rating": 5 },
+    { "name": "Priya Mehta", "business": "Coaching Institute, Indore", "text": "Chatbot automation se ab humara team time bachata hai. Students ko auto-replies milti hain instantly.", "rating": 5 },
+    { "name": "Amit Joshi", "business": "Real Estate Agency", "text": "Coexist API best hai — apna purana number bhi chala raha hoon aur API bhi use kar raha hoon.", "rating": 5 }
+  ],
+  "faqs": [
+    { "q": "Kya WGMB API official WhatsApp API hai?", "a": "Haan, WGMB API bilkul official Meta-approved WhatsApp Business API solution hai. Aapka account safe rahega." },
+    { "q": "Kya mera purana WhatsApp number delete hoga?", "a": "Nahi! WGMB Coexist API se aap apna existing number use kar sakte ho bina delete kiye." },
+    { "q": "Ek baar mein kitne messages bhej sakte hain?", "a": "Aap ek baar mein 1000+ customers ko bulk WhatsApp messages bhej sakte hain high delivery reliability ke saath." },
+    { "q": "Setup mein kitna time lagta hai?", "a": "Hamaari team 24-48 ghante mein complete setup aur installation kar deti hai, saath mein training bhi deti hai." },
+    { "q": "Support kaise milega?", "a": "Aapko after-sales live call support milega. Hum hamesha available hain — call ya WhatsApp pe contact kar sakte hain." },
+    { "q": "Kya chatbot bhi included hai?", "a": "Haan! WhatsApp chatbot automation dono plans mein included hai — auto-replies, lead handling, booking automation sab." }
+  ]
+}
